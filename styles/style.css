@@ -22,12 +22,12 @@ body {
 }
 
 .cabecalho {
-  padding: 2% 0% 0% 25%;
+  padding: 2% 0% 0% 15%;
 }
 
 .cabecalho__menu {
   display: flex;
-  gap: 70px;
+  gap: 80px;
 }
 
 .cabecalho__menu__link {
@@ -43,14 +43,15 @@ body {
 }
 
 .apresentacao {
-  padding: 5% 25%;
+  padding: 5% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 82px;
 }
 
 .apresentacao__conteudo {
-  width: 50%px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -100,21 +101,40 @@ body {
   font-family: var(--font-secundaria);
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
   background-color: var(--cor-hover);
 }
 
 .enrique-imagem {
-  width: 50%;
+  width: 40%;
   border-radius: 10%;
 }
 
 .rodape {
-  padding: 28px;
+  padding: 24px;
   background-color: var(--cor-terciaria);
   color: var(--cor-primaria);
   text-align: center;
   font-family: var(--font-secundaria);
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabecalho__menu {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
 }
